@@ -27,7 +27,7 @@
 
 .header .jumbotron {
     text-align: center;
-    padding: 0, 0, 44px, 0;
+    padding: 0 0 44px 0;
     text-transform: uppercase;
 }
 
@@ -36,25 +36,39 @@
     text-shadow: 4px, 4px, 10px, black;
 }
 .header .jumbotron .title {
-    font-size: 48px;
+    font-size: 3em;
 }
 .header .jumbotron .sub-title {
-    font-size: 42px;
+    font-size: 2.6em;
     color: #64FF64;
-    margin-top: 7px;
+    margin-top: 8px;
 }
 
 .header .jumbotron .buttom {
     display: inline-block;
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    border:solid 2px;
     padding: 25px 50px;
     margin: 5px;
     background-color: #48A3A6;
     border-radius: 8px;
     box-shadow: 1px 1px 5px black;
+    text-decoration: none;
+    font-size: 18px;
     font-weight: bold;
+    color: white;
     
 }
+
+.header .jumbotron .panel-subscribe {
+    margin-top: 28px;
+}
+.header .panel-subscribe {
+    margin-top: 28px;
+}
+
+
+@media(min-width: 650px) {
+    .header .jumbotron {
+        font-size: 28px;
+    }
+}
+
