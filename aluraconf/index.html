@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/speackers.css">
+    <link rel="stylesheet" href="css/form.css">
     <title>AluraConf</title>
 </head>
 
@@ -16,8 +17,8 @@
     <header class="header">
         <nav class="main-menu">
             <ul class="botao-index">
-                <li class="menu-item"><a href="#">Sobre</a></li>
-                <li class="menu-item"><a href="#">Palestrantes</a></li>
+                <li class="menu-item"><a href="#panel-about">Sobre</a></li>
+                <li class="menu-item"><a href="#panel-speakers">Palestrantes</a></li>
             </ul>
             <div class="jumbotron">
                 <section class="panel-main">
@@ -25,13 +26,13 @@
                     <h2 class="sub-title">30Maio|Rio</h2>
                 </section>
                 <section class="panel-subscribe">
-                    <a href="#" class="buttom">Inscreva-se</a>
+                    <a href="#panel-form" class="button">Inscreva-se</a>
                 </section>
             </div>
         </nav>
     </header>
 
-    <section class="panel panel-about">
+    <section id="panel-about" class="panel panel-about">
         <div class="container">
             <h2 class="title">Muito conteúdo: do frontend ao backend</h2>
             <h3 class="subtitle">30 de Maio de 2017 - na Cidade Maravilhosa</h3>
@@ -50,7 +51,7 @@
         </div>
     </section>
 
-    <section class="panel panel-speakers">
+    <section id="panel-speakers" class="panel panel-speakers">
         <div class="container">
             <div class="about-speakers">
                 <h2 class="title">Flávio Almeida</h2>
@@ -61,6 +62,24 @@
 
                 <li class="speaker">
                     <figure class="speaker-portrait">
+                        <img class="speaker-image" src="img/palestrantes/placeholder.jpeg" alt="Foto do plaestrante">
+                        <figcaption class="speaker-name">Flávio Almeida</figcaption>
+                        <p class="speaker-bio">Desenvolvedor e instrutor da Caelum</p>
+                    </figure>
+                    <p class="speaker-speach">To be or not to be MEAN</p>
+                </li>
+
+                <li class="speaker">
+                    <figure class="speaker-portrait">
+                        <img class="speaker-image" src="img/palestrantes/placeholder.jpeg" alt="Foto do plaestrante">
+                        <figcaption class="speaker-name">Flávio Almeida</figcaption>
+                        <p class="speaker-bio">Desenvolvedor e instrutor da Caelum</p>
+                    </figure>
+                    <p class="speaker-speach">To be or not to be MEAN</p>
+                </li>
+
+                <li class="speaker">
+                    <figure class="speaker-image" class="speaker-portrait">
                         <img src="img/palestrantes/placeholder.jpeg" alt="Foto do plaestrante">
                         <figcaption class="speaker-name">Flávio Almeida</figcaption>
                         <p class="speaker-bio">Desenvolvedor e instrutor da Caelum</p>
@@ -70,7 +89,7 @@
 
                 <li class="speaker">
                     <figure class="speaker-portrait">
-                        <img src="img/palestrantes/placeholder.jpeg" alt="Foto do plaestrante">
+                        <img class="speaker-image" src="img/palestrantes/placeholder.jpeg" alt="Foto do plaestrante">
                         <figcaption class="speaker-name">Flávio Almeida</figcaption>
                         <p class="speaker-bio">Desenvolvedor e instrutor da Caelum</p>
                     </figure>
@@ -79,7 +98,7 @@
 
                 <li class="speaker">
                     <figure class="speaker-portrait">
-                        <img src="img/palestrantes/placeholder.jpeg" alt="Foto do plaestrante">
+                        <img class="speaker-image" src="img/palestrantes/placeholder.jpeg" alt="Foto do plaestrante">
                         <figcaption class="speaker-name">Flávio Almeida</figcaption>
                         <p class="speaker-bio">Desenvolvedor e instrutor da Caelum</p>
                     </figure>
@@ -88,25 +107,7 @@
 
                 <li class="speaker">
                     <figure class="speaker-portrait">
-                        <img src="img/palestrantes/placeholder.jpeg" alt="Foto do plaestrante">
-                        <figcaption class="speaker-name">Flávio Almeida</figcaption>
-                        <p class="speaker-bio">Desenvolvedor e instrutor da Caelum</p>
-                    </figure>
-                    <p class="speaker-speach">To be or not to be MEAN</p>
-                </li>
-
-                <li class="speaker">
-                    <figure class="speaker-portrait">
-                        <img src="img/palestrantes/placeholder.jpeg" alt="Foto do plaestrante">
-                        <figcaption class="speaker-name">Flávio Almeida</figcaption>
-                        <p class="speaker-bio">Desenvolvedor e instrutor da Caelum</p>
-                    </figure>
-                    <p class="speaker-speach">To be or not to be MEAN</p>
-                </li>
-
-                <li class="speaker">
-                    <figure class="speaker-portrait">
-                        <img src="img/palestrantes/placeholder.jpeg" alt="Foto do plaestrante">
+                        <img class="speaker-image" src="img/palestrantes/placeholder.jpeg" alt="Foto do plaestrante">
                         <figcaption class="speaker-name">Flávio Almeida</figcaption>
                         <p class="speaker-bio">Desenvolvedor e instrutor da Caelum</p>
                     </figure>
@@ -117,7 +118,29 @@
         </div>
     </section>
 
+    <section id="panel-form" class="panel-form">
+        <div class="container">
+            <h2 class="title">Seus Dados</h2>
+            <form>
+                <div class="field">
+                    <Label>Nome</Label>
+                    <input class="field-input">
+                </div>
 
+                <div class="field">
+                    <label>E-mail</label>
+                    <input class="field-input">
+                </div>
+                
+                <div class="button-place">
+                    <button class="button">Realizar Incrição</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/index.js"></script>
 
 </body>
 
